@@ -1,9 +1,9 @@
 version: "3.9"
 services:
-  ros_docker:
+  generate_ros_msgs_ros2dart:
     extends:
       file: docker-compose.yml
-      service: ros_docker
+      service: generate_ros_msgs_ros2dart
     environment:
      - DISPLAY=${DISPLAY:-0}
      - QT_X11_NO_MITSHM=1

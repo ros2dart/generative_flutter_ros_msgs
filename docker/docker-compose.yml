@@ -1,6 +1,6 @@
 version: "3.9"
 services:
-  ros_docker:
+  generate_ros_msgs_ros2dart:
     build:
       context: ..
       dockerfile: docker/Dockerfile
@@ -11,7 +11,7 @@ services:
         # - USERNAME=${USERNAME:-developer}
         - UID=${UID:-1000}
         - GID=${UID:-1000}
-    container_name: ros_docker
+    container_name: generate_ros_msgs_ros2dart
     environment:
       - ROS_MASTER_URI=http://${ROBOT_IP}:11311
       - ROS_IP=${YOUR_IP}

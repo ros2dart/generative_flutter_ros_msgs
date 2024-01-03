@@ -1,9 +1,9 @@
 {
-  "name": "ROS Docker",
+  "name": "Generate ROS Msgs On Devcontainer ROS",
   "dockerComposeFile": [
     "../docker/docker-compose-gui.yml" // Alternatives: "../docker/docker-compose-gui.yml", "../docker/docker-compose-gui-nvidia.yml", "../docker/docker-compose-nvidia.yml"
   ],
-  "service": "ros2dart",
+  "service": "generate_ros_msgs_ros2dart",
   "workspaceFolder": "/catkin_ws",
   "shutdownAction": "stopCompose",
   "initializeCommand": "echo 'ros2dart'",
