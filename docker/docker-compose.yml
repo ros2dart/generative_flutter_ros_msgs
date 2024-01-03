@@ -24,4 +24,5 @@ services:
       - ../src:/${CATKIN_WORKSPACE_DIR}/src
       - ../artifacts/build:/${CATKIN_WORKSPACE_DIR}/build
       - ../artifacts/devel:/${CATKIN_WORKSPACE_DIR}/devel
+      # - ../ros:/${CATKIN_WORKSPACE_DIR}/devel/share/gendart/ros/
 

@@ -1,0 +1,11 @@
+# generated from genmsg/cmake/pkg-genmsg.context.in
+
+messages_str = "/catkin_ws/src/common_msgs/geometry_msgs/msg/Accel.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/AccelStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/AccelWithCovariance.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/AccelWithCovarianceStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Inertia.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/InertiaStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Point.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Point32.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/PointStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Polygon.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/PolygonStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Pose2D.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Pose.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/PoseArray.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/PoseStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/PoseWithCovariance.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/PoseWithCovarianceStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/QuaternionStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/TransformStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/TwistStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/TwistWithCovariance.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/TwistWithCovarianceStamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3Stamped.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Wrench.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/WrenchStamped.msg"
+services_str = ""
+pkg_name = "geometry_msgs"
+dependencies_str = "std_msgs"
+langs = "gencpp;gendart;geneus;genlisp;gennodejs;genpy"
+dep_include_paths_str = "geometry_msgs;/catkin_ws/src/common_msgs/geometry_msgs/msg;std_msgs;/opt/ros/noetic/share/std_msgs/cmake/../msg"
+PYTHON_EXECUTABLE = "/usr/bin/python3"
+package_has_static_sources = '' == 'TRUE'
+genmsg_check_deps_script = "/opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py"

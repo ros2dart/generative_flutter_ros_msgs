@@ -1,6 +1,38 @@
 repositories:
-  tutorials:
+  moveit_msgs:
     type: git
-    url: https://github.com/ros/ros_tutorials.git
-    version: noetic-devel
-    
+    url: https://github.com/ros-planning/moveit_msgs.git
+    version : melodic-devel
+  turtlebot3_msgs:
+    type: git
+    url: https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+    version : noetic-devel
+  common_msgs:
+    type: git
+    url: https://github.com/ros/common_msgs.git
+    version : noetic-devel
+  vision_msgs:
+    type: git
+    url: https://github.com/ros-perception/vision_msgs.git
+    version : noetic-devel
+  radar_msgs:
+    type: git
+    url: https://github.com/ros-perception/radar_msgs.git
+    version : noetic
+  pcl_msgs:
+    type: git
+    url: https://github.com/ros-perception/pcl_msgs.git
+    version : noetic-devel
+  octomap_msgs:
+    type: git
+    url: https://github.com/OctoMap/octomap_msgs.git
+    version : melodic-devel
+  ros-carla-msgs:
+    type: git
+    url: https://github.com/carla-simulator/ros-carla-msgs.git
+    version : master
+  autoware_msgs:
+    type: git
+    url: https://github.com/autowarefoundation/autoware_msgs.git
+    version : master
+  
