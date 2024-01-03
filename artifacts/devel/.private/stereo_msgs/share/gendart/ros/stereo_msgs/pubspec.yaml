@@ -1,0 +1,17 @@
+# Auto-generated. Do not edit!
+
+# Updated: Wed Jan  3 19:35:11 2024
+
+
+name: stereo_msgs
+description: A ros stereo_msgs message package for dartros
+version: 0.1.0
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+
+dependencies:
+  buffer: ^1.1.0
+  dartros_msgutils: ">=0.1.0 <0.2.0"
+  sensor_msgs: ">=0.1.0 <0.2.0"
+  std_msgs: ">=0.1.0 <0.2.0"

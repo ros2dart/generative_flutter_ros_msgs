@@ -1,0 +1,1 @@
+/catkin_ws/devel/.private/visualization_msgs/share/roseus/ros/visualization_msgs/msg/InteractiveMarkerFeedback.l

@@ -1,0 +1,1 @@
+/catkin_ws/devel/.private/sensor_msgs/share/gendart/ros/sensor_msgs/lib/src/msgs/PointCloud2.dart
