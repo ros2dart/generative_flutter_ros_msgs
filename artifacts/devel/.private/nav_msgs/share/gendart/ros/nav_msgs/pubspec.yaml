@@ -1,6 +1,6 @@
 # Auto-generated. Do not edit!
 
-# Updated: Wed Jan  3 19:35:09 2024
+# Updated: Wed Jan  3 19:53:43 2024
 
 
 name: nav_msgs
@@ -13,6 +13,6 @@ environment:
 dependencies:
   buffer: ^1.1.0
   dartros_msgutils: ">=0.1.0 <0.2.0"
-  geometry_msgs: ">=0.1.0 <0.2.0"
-  actionlib_msgs: ">=0.1.0 <0.2.0"
   std_msgs: ">=0.1.0 <0.2.0"
+  actionlib_msgs: ">=0.1.0 <0.2.0"
+  geometry_msgs: ">=0.1.0 <0.2.0"

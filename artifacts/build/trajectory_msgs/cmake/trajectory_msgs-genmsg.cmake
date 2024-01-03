@@ -20,7 +20,7 @@ add_custom_target(trajectory_msgs_generate_messages ALL)
 
 get_filename_component(_filename "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" NAME_WE)
 add_custom_target(_trajectory_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" "trajectory_msgs/JointTrajectoryPoint:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg" "std_msgs/Header:trajectory_msgs/JointTrajectoryPoint"
 )
 
 get_filename_component(_filename "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg" NAME_WE)
@@ -30,12 +30,12 @@ add_custom_target(_trajectory_msgs_generate_messages_check_deps_${_filename}
 
 get_filename_component(_filename "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" NAME_WE)
 add_custom_target(_trajectory_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" "geometry_msgs/Twist:trajectory_msgs/MultiDOFJointTrajectoryPoint:geometry_msgs/Quaternion:std_msgs/Header:geometry_msgs/Transform:geometry_msgs/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg" "geometry_msgs/Transform:std_msgs/Header:geometry_msgs/Vector3:geometry_msgs/Quaternion:trajectory_msgs/MultiDOFJointTrajectoryPoint:geometry_msgs/Twist"
 )
 
 get_filename_component(_filename "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" NAME_WE)
 add_custom_target(_trajectory_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" "geometry_msgs/Twist:geometry_msgs/Quaternion:geometry_msgs/Vector3:geometry_msgs/Transform"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "trajectory_msgs" "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg" "geometry_msgs/Transform:geometry_msgs/Quaternion:geometry_msgs/Vector3:geometry_msgs/Twist"
 )
 
 #
@@ -47,7 +47,7 @@ add_custom_target(_trajectory_msgs_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_cpp(trajectory_msgs
@@ -59,13 +59,13 @@ _generate_msg_cpp(trajectory_msgs
 _generate_msg_cpp(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_cpp(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/trajectory_msgs
 )
 
@@ -104,7 +104,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trajectory_msgs_generate_messages_c
 _generate_msg_dart(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gendart_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_dart(trajectory_msgs
@@ -116,13 +116,13 @@ _generate_msg_dart(trajectory_msgs
 _generate_msg_dart(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gendart_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_dart(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gendart_INSTALL_DIR}/trajectory_msgs
 )
 
@@ -161,7 +161,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trajectory_msgs_generate_messages_d
 _generate_msg_eus(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_eus(trajectory_msgs
@@ -173,13 +173,13 @@ _generate_msg_eus(trajectory_msgs
 _generate_msg_eus(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_eus(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/trajectory_msgs
 )
 
@@ -218,7 +218,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trajectory_msgs_generate_messages_e
 _generate_msg_lisp(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_lisp(trajectory_msgs
@@ -230,13 +230,13 @@ _generate_msg_lisp(trajectory_msgs
 _generate_msg_lisp(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_lisp(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/trajectory_msgs
 )
 
@@ -275,7 +275,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trajectory_msgs_generate_messages_l
 _generate_msg_nodejs(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_nodejs(trajectory_msgs
@@ -287,13 +287,13 @@ _generate_msg_nodejs(trajectory_msgs
 _generate_msg_nodejs(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_nodejs(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/trajectory_msgs
 )
 
@@ -332,7 +332,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS trajectory_msgs_generate_messages_n
 _generate_msg_py(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  "/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/JointTrajectoryPoint.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_py(trajectory_msgs
@@ -344,13 +344,13 @@ _generate_msg_py(trajectory_msgs
 _generate_msg_py(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectory.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trajectory_msgs
 )
 _generate_msg_py(trajectory_msgs
   "/catkin_ws/src/common_msgs/trajectory_msgs/msg/MultiDOFJointTrajectoryPoint.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg"
+  "/catkin_ws/src/common_msgs/geometry_msgs/msg/Transform.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Quaternion.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Vector3.msg;/catkin_ws/src/common_msgs/geometry_msgs/msg/Twist.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/trajectory_msgs
 )
 

@@ -51,11 +51,16 @@ RUN apt-get update \
 
 ENV DEBIAN_FRONTEND=dialog
 
+RUN mkdir -p /catkin_ws/devel/share/gendart/ros
+
 RUN addgroup --gid ${GID} ${USERNAME} \
    && adduser --disabled-password --gecos '' --uid ${GID} --gid ${GID} ${USERNAME} \
    && echo ${USERNAME} ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/${USERNAME} \
    && chown -R ${UID}:${GID} /home/${USERNAME} \
-   && chown -R ${UID}:${GID} ${CATKIN_WORKSPACE_DIR}
+   && chown -R ${UID}:${GID} ${CATKIN_WORKSPACE_DIR} \
+   && chown -R ${UID}:${GID} ${CATKIN_WORKSPACE_DIR}/devel/share/gendart/ros
+
+RUN chmod -R +rwX  /catkin_ws/devel/share/gendart/ros
 
 COPY "/.vscode" "${CATKIN_WORKSPACE_DIR}/.vscode"
 RUN sed -i -E "s/(ROS_DISTRO=\\$\{1:-\").*(\"\})/\1${ROS_DISTRO}\2/" ${CATKIN_WORKSPACE_DIR}/.vscode/ros_source.bash \
@@ -63,7 +68,6 @@ RUN sed -i -E "s/(ROS_DISTRO=\\$\{1:-\").*(\"\})/\1${ROS_DISTRO}\2/" ${CATKIN_WO
    && echo "alias rbuild='(cd ${CATKIN_WORKSPACE_DIR} && catkin build)'" >> /home/${USERNAME}/.bash_aliases \
    && echo "alias rclean='(cd ${CATKIN_WORKSPACE_DIR} && catkin clean -y)'" >> /home/${USERNAME}/.bash_aliases \
    && echo "source ${CATKIN_WORKSPACE_DIR}/.vscode/ros_source.bash" >> /home/${USERNAME}/.bashrc
-
 
 
 RUN apt-get update \

@@ -1,6 +1,6 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:35:11 2024
+// Updated: Wed Jan  3 19:53:46 2024
 
 // (in-package stereo_msgs.msg)
 
@@ -9,8 +9,8 @@
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
 import 'package:dartros_msgutils/msg_utils.dart';
-import 'package:sensor_msgs/msgs.dart';
 import 'package:std_msgs/msgs.dart';
+import 'package:sensor_msgs/msgs.dart';
 
 //-----------------------------------------------------------
 
