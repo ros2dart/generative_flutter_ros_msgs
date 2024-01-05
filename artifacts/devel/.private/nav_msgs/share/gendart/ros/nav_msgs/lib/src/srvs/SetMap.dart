@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:57:27 2024
 
 // (in-package nav_msgs.srv)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:geometry_msgs/msgs.dart';
 import '../msgs/OccupancyGrid.dart';
 
@@ -24,16 +24,16 @@ class SetMapRequest extends RosMessage<SetMapRequest> {
 
   static SetMapRequest $prototype = SetMapRequest();
   SetMapRequest({ 
-    OccupancyGrid? map,
-    PoseWithCovarianceStamped? initial_pose,
+    OccupancyGrid map,
+    PoseWithCovarianceStamped initial_pose,
   }):
   this.map = map ?? OccupancyGrid(),
   this.initial_pose = initial_pose ?? PoseWithCovarianceStamped();
 
   @override
   SetMapRequest call({ 
-    OccupancyGrid? map,
-    PoseWithCovarianceStamped? initial_pose,
+    OccupancyGrid map,
+    PoseWithCovarianceStamped initial_pose,
   }) => SetMapRequest(
   map: map,
   initial_pose: initial_pose,
@@ -180,13 +180,13 @@ class SetMapResponse extends RosMessage<SetMapResponse> {
 
   static SetMapResponse $prototype = SetMapResponse();
   SetMapResponse({ 
-    bool? success,
+    bool success,
   }):
   this.success = success ?? false;
 
   @override
   SetMapResponse call({ 
-    bool? success,
+    bool success,
   }) => SetMapResponse(
   success: success,
   );
@@ -244,6 +244,4 @@ class SetMap extends RosServiceMessage<SetMapRequest, SetMapResponse> {
   String get md5sum => 'c36922319011e63ed7784112ad4fdd32';
   @override
   String get fullType => 'nav_msgs/SetMap';
-  @override
-  String get messageDefinition => request.messageDefinition + "---" + response.messageDefinition;
 }

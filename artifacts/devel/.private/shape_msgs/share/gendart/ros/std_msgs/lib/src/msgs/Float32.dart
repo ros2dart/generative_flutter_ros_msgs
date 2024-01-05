@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:56:16 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -17,13 +17,13 @@ class Float32 extends RosMessage<Float32> {
 
   static Float32 $prototype = Float32();
   Float32({ 
-    double? data,
+    double data,
   }):
   this.data = data ?? 0.0;
 
   @override
   Float32 call({ 
-    double? data,
+    double data,
   }) => Float32(
   data: data,
   );

@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:56:15 2024
 
 // (in-package shape_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:geometry_msgs/msgs.dart';
 import 'MeshTriangle.dart';
 
@@ -21,16 +21,16 @@ class Mesh extends RosMessage<Mesh> {
 
   static Mesh $prototype = Mesh();
   Mesh({ 
-    List<MeshTriangle>? triangles,
-    List<Point>? vertices,
+    List<MeshTriangle> triangles,
+    List<Point> vertices,
   }):
   this.triangles = triangles ?? [],
   this.vertices = vertices ?? [];
 
   @override
   Mesh call({ 
-    List<MeshTriangle>? triangles,
-    List<Point>? vertices,
+    List<MeshTriangle> triangles,
+    List<Point> vertices,
   }) => Mesh(
   triangles: triangles,
   vertices: vertices,

@@ -1,17 +1,17 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:57:08 2024
 
 // (in-package nav_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'GetMapGoal.dart';
 import 'GetMapFeedback.dart';
 import 'GetMapResult.dart';
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'GetMapActionGoal.dart';
 import 'GetMapActionResult.dart';
 import 'GetMapActionFeedback.dart';
@@ -27,9 +27,9 @@ class GetMapAction extends RosActionMessage<GetMapGoal, GetMapActionGoal, GetMap
 
   static GetMapAction $prototype = GetMapAction();
   GetMapAction({ 
-    GetMapActionGoal? action_goal,
-    GetMapActionResult? action_result,
-    GetMapActionFeedback? action_feedback,
+    GetMapActionGoal action_goal,
+    GetMapActionResult action_result,
+    GetMapActionFeedback action_feedback,
   }):
   this.action_goal = action_goal ?? GetMapActionGoal(),
   this.action_result = action_result ?? GetMapActionResult(),
@@ -37,9 +37,9 @@ class GetMapAction extends RosActionMessage<GetMapGoal, GetMapActionGoal, GetMap
 
   @override
   GetMapAction call({ 
-    GetMapActionGoal? action_goal,
-    GetMapActionResult? action_result,
-    GetMapActionFeedback? action_feedback,
+    GetMapActionGoal action_goal,
+    GetMapActionResult action_result,
+    GetMapActionFeedback action_feedback,
   }) => GetMapAction(
   action_goal: action_goal,
   action_result: action_result,

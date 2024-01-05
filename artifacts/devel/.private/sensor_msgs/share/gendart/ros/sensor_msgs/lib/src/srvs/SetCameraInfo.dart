@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:58:34 2024
 
 // (in-package sensor_msgs.srv)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import '../msgs/CameraInfo.dart';
 
 //-----------------------------------------------------------
@@ -21,13 +21,13 @@ class SetCameraInfoRequest extends RosMessage<SetCameraInfoRequest> {
 
   static SetCameraInfoRequest $prototype = SetCameraInfoRequest();
   SetCameraInfoRequest({ 
-    CameraInfo? camera_info,
+    CameraInfo camera_info,
   }):
   this.camera_info = camera_info ?? CameraInfo();
 
   @override
   SetCameraInfoRequest call({ 
-    CameraInfo? camera_info,
+    CameraInfo camera_info,
   }) => SetCameraInfoRequest(
   camera_info: camera_info,
   );
@@ -262,16 +262,16 @@ class SetCameraInfoResponse extends RosMessage<SetCameraInfoResponse> {
 
   static SetCameraInfoResponse $prototype = SetCameraInfoResponse();
   SetCameraInfoResponse({ 
-    bool? success,
-    String? status_message,
+    bool success,
+    String status_message,
   }):
   this.success = success ?? false,
   this.status_message = status_message ?? '';
 
   @override
   SetCameraInfoResponse call({ 
-    bool? success,
-    String? status_message,
+    bool success,
+    String status_message,
   }) => SetCameraInfoResponse(
   success: success,
   status_message: status_message,
@@ -336,6 +336,4 @@ class SetCameraInfo extends RosServiceMessage<SetCameraInfoRequest, SetCameraInf
   String get md5sum => 'bef1df590ed75ed1f393692395e15482';
   @override
   String get fullType => 'sensor_msgs/SetCameraInfo';
-  @override
-  String get messageDefinition => request.messageDefinition + "---" + response.messageDefinition;
 }

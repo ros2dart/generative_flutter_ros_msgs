@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:56:17 2024
 
 // (in-package shape_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -17,13 +17,13 @@ class Plane extends RosMessage<Plane> {
 
   static Plane $prototype = Plane();
   Plane({ 
-    List<double>? coef,
+    List<double> coef,
   }):
   this.coef = coef ?? List.generate(4, (_) => 0);
 
   @override
   Plane call({ 
-    List<double>? coef,
+    List<double> coef,
   }) => Plane(
   coef: coef,
   );

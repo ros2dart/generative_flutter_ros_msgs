@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:56:17 2024
 
 // (in-package shape_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -17,13 +17,13 @@ class MeshTriangle extends RosMessage<MeshTriangle> {
 
   static MeshTriangle $prototype = MeshTriangle();
   MeshTriangle({ 
-    List<int>? vertex_indices,
+    List<int> vertex_indices,
   }):
   this.vertex_indices = vertex_indices ?? List.generate(3, (_) => 0);
 
   @override
   MeshTriangle call({ 
-    List<int>? vertex_indices,
+    List<int> vertex_indices,
   }) => MeshTriangle(
   vertex_indices: vertex_indices,
   );

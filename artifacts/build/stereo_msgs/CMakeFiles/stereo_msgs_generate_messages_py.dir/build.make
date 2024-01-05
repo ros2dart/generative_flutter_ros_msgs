@@ -59,8 +59,8 @@ CMakeFiles/stereo_msgs_generate_messages_py: /catkin_ws/devel/.private/stereo_ms
 
 /catkin_ws/devel/.private/stereo_msgs/lib/python3/dist-packages/stereo_msgs/msg/_DisparityImage.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /catkin_ws/devel/.private/stereo_msgs/lib/python3/dist-packages/stereo_msgs/msg/_DisparityImage.py: /catkin_ws/src/common_msgs/stereo_msgs/msg/DisparityImage.msg
-/catkin_ws/devel/.private/stereo_msgs/lib/python3/dist-packages/stereo_msgs/msg/_DisparityImage.py: /catkin_ws/src/common_msgs/sensor_msgs/msg/RegionOfInterest.msg
 /catkin_ws/devel/.private/stereo_msgs/lib/python3/dist-packages/stereo_msgs/msg/_DisparityImage.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/catkin_ws/devel/.private/stereo_msgs/lib/python3/dist-packages/stereo_msgs/msg/_DisparityImage.py: /catkin_ws/src/common_msgs/sensor_msgs/msg/RegionOfInterest.msg
 /catkin_ws/devel/.private/stereo_msgs/lib/python3/dist-packages/stereo_msgs/msg/_DisparityImage.py: /catkin_ws/src/common_msgs/sensor_msgs/msg/Image.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/catkin_ws/build/stereo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python from MSG stereo_msgs/DisparityImage"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /catkin_ws/src/common_msgs/stereo_msgs/msg/DisparityImage.msg -Istereo_msgs:/catkin_ws/src/common_msgs/stereo_msgs/msg -Isensor_msgs:/catkin_ws/src/common_msgs/sensor_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/catkin_ws/src/common_msgs/geometry_msgs/msg -p stereo_msgs -o /catkin_ws/devel/.private/stereo_msgs/lib/python3/dist-packages/stereo_msgs/msg

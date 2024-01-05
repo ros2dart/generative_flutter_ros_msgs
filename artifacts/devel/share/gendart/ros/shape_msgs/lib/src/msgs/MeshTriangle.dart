@@ -1,1 +1,0 @@
-/catkin_ws/devel/.private/shape_msgs/share/gendart/ros/shape_msgs/lib/src/msgs/MeshTriangle.dart

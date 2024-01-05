@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:41 2024
+// Updated: Fri Jan  5 12:56:32 2024
 
 // (in-package trajectory_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'JointTrajectoryPoint.dart';
 
@@ -23,9 +23,9 @@ class JointTrajectory extends RosMessage<JointTrajectory> {
 
   static JointTrajectory $prototype = JointTrajectory();
   JointTrajectory({ 
-    Header? header,
-    List<String>? joint_names,
-    List<JointTrajectoryPoint>? points,
+    Header header,
+    List<String> joint_names,
+    List<JointTrajectoryPoint> points,
   }):
   this.header = header ?? Header(),
   this.joint_names = joint_names ?? [],
@@ -33,9 +33,9 @@ class JointTrajectory extends RosMessage<JointTrajectory> {
 
   @override
   JointTrajectory call({ 
-    Header? header,
-    List<String>? joint_names,
-    List<JointTrajectoryPoint>? points,
+    Header header,
+    List<String> joint_names,
+    List<JointTrajectoryPoint> points,
   }) => JointTrajectory(
   header: header,
   joint_names: joint_names,

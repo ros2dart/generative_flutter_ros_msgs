@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:57:59 2024
 
 // (in-package sensor_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'NavSatStatus.dart';
 
@@ -31,13 +31,13 @@ class NavSatFix extends RosMessage<NavSatFix> {
 
   static NavSatFix $prototype = NavSatFix();
   NavSatFix({ 
-    Header? header,
-    NavSatStatus? status,
-    double? latitude,
-    double? longitude,
-    double? altitude,
-    List<double>? position_covariance,
-    int? position_covariance_type,
+    Header header,
+    NavSatStatus status,
+    double latitude,
+    double longitude,
+    double altitude,
+    List<double> position_covariance,
+    int position_covariance_type,
   }):
   this.header = header ?? Header(),
   this.status = status ?? NavSatStatus(),
@@ -49,13 +49,13 @@ class NavSatFix extends RosMessage<NavSatFix> {
 
   @override
   NavSatFix call({ 
-    Header? header,
-    NavSatStatus? status,
-    double? latitude,
-    double? longitude,
-    double? altitude,
-    List<double>? position_covariance,
-    int? position_covariance_type,
+    Header header,
+    NavSatStatus status,
+    double latitude,
+    double longitude,
+    double altitude,
+    List<double> position_covariance,
+    int position_covariance_type,
   }) => NavSatFix(
   header: header,
   status: status,

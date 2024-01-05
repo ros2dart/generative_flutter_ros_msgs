@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:46 2024
+// Updated: Fri Jan  5 12:59:19 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'Inertia.dart';
 
@@ -21,16 +21,16 @@ class InertiaStamped extends RosMessage<InertiaStamped> {
 
   static InertiaStamped $prototype = InertiaStamped();
   InertiaStamped({ 
-    Header? header,
-    Inertia? inertia,
+    Header header,
+    Inertia inertia,
   }):
   this.header = header ?? Header(),
   this.inertia = inertia ?? Inertia();
 
   @override
   InertiaStamped call({ 
-    Header? header,
-    Inertia? inertia,
+    Header header,
+    Inertia inertia,
   }) => InertiaStamped(
   header: header,
   inertia: inertia,

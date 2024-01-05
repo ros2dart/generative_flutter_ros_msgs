@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:46 2024
+// Updated: Fri Jan  5 12:59:19 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'AccelWithCovariance.dart';
 
@@ -21,16 +21,16 @@ class AccelWithCovarianceStamped extends RosMessage<AccelWithCovarianceStamped> 
 
   static AccelWithCovarianceStamped $prototype = AccelWithCovarianceStamped();
   AccelWithCovarianceStamped({ 
-    Header? header,
-    AccelWithCovariance? accel,
+    Header header,
+    AccelWithCovariance accel,
   }):
   this.header = header ?? Header(),
   this.accel = accel ?? AccelWithCovariance();
 
   @override
   AccelWithCovarianceStamped call({ 
-    Header? header,
-    AccelWithCovariance? accel,
+    Header header,
+    AccelWithCovariance accel,
   }) => AccelWithCovarianceStamped(
   header: header,
   accel: accel,

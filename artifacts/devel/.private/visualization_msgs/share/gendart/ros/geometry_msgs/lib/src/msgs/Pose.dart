@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:40 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'Point.dart';
 import 'Quaternion.dart';
 
@@ -21,16 +21,16 @@ class Pose extends RosMessage<Pose> {
 
   static Pose $prototype = Pose();
   Pose({ 
-    Point? position,
-    Quaternion? orientation,
+    Point position,
+    Quaternion orientation,
   }):
   this.position = position ?? Point(),
   this.orientation = orientation ?? Quaternion();
 
   @override
   Pose call({ 
-    Point? position,
-    Quaternion? orientation,
+    Point position,
+    Quaternion orientation,
   }) => Pose(
   position: position,
   orientation: orientation,

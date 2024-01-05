@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:56:17 2024
 
 // (in-package shape_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -19,16 +19,16 @@ class SolidPrimitive extends RosMessage<SolidPrimitive> {
 
   static SolidPrimitive $prototype = SolidPrimitive();
   SolidPrimitive({ 
-    int? type,
-    List<double>? dimensions,
+    int type,
+    List<double> dimensions,
   }):
   this.type = type ?? 0,
   this.dimensions = dimensions ?? [];
 
   @override
   SolidPrimitive call({ 
-    int? type,
-    List<double>? dimensions,
+    int type,
+    List<double> dimensions,
   }) => SolidPrimitive(
   type: type,
   dimensions: dimensions,

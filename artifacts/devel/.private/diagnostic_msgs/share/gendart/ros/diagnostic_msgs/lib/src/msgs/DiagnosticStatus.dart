@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:39 2024
+// Updated: Fri Jan  5 12:53:43 2024
 
 // (in-package diagnostic_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'KeyValue.dart';
 
 //-----------------------------------------------------------
@@ -26,11 +26,11 @@ class DiagnosticStatus extends RosMessage<DiagnosticStatus> {
 
   static DiagnosticStatus $prototype = DiagnosticStatus();
   DiagnosticStatus({ 
-    int? level,
-    String? name,
-    String? message,
-    String? hardware_id,
-    List<KeyValue>? values,
+    int level,
+    String name,
+    String message,
+    String hardware_id,
+    List<KeyValue> values,
   }):
   this.level = level ?? 0,
   this.name = name ?? '',
@@ -40,11 +40,11 @@ class DiagnosticStatus extends RosMessage<DiagnosticStatus> {
 
   @override
   DiagnosticStatus call({ 
-    int? level,
-    String? name,
-    String? message,
-    String? hardware_id,
-    List<KeyValue>? values,
+    int level,
+    String name,
+    String message,
+    String hardware_id,
+    List<KeyValue> values,
   }) => DiagnosticStatus(
   level: level,
   name: name,

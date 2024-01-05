@@ -365,7 +365,7 @@ RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
 //Name of the computer/site where compile is being run
-SITE:STRING=harunkurt-dev
+SITE:STRING=docker-desktop
 
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
@@ -393,8 +393,6 @@ gencpp_DIR:PATH=/opt/ros/noetic/share/gencpp/cmake
 
 //Value Computed by CMake
 gendart_BINARY_DIR:STATIC=/catkin_ws/build/gendart
-
-gendart_DIR:PATH=
 
 //Value Computed by CMake
 gendart_SOURCE_DIR:STATIC=/catkin_ws/src/gendart

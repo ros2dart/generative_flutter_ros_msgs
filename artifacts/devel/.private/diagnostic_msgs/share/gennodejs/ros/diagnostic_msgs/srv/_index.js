@@ -1,10 +1,10 @@
 
 "use strict";
 
-let SelfTest = require('./SelfTest.js')
 let AddDiagnostics = require('./AddDiagnostics.js')
+let SelfTest = require('./SelfTest.js')
 
 module.exports = {
-  SelfTest: SelfTest,
   AddDiagnostics: AddDiagnostics,
+  SelfTest: SelfTest,
 };

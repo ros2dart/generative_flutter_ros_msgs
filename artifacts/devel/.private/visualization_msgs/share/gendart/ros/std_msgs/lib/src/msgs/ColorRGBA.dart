@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:34 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -23,10 +23,10 @@ class ColorRGBA extends RosMessage<ColorRGBA> {
 
   static ColorRGBA $prototype = ColorRGBA();
   ColorRGBA({ 
-    double? r,
-    double? g,
-    double? b,
-    double? a,
+    double r,
+    double g,
+    double b,
+    double a,
   }):
   this.r = r ?? 0.0,
   this.g = g ?? 0.0,
@@ -35,10 +35,10 @@ class ColorRGBA extends RosMessage<ColorRGBA> {
 
   @override
   ColorRGBA call({ 
-    double? r,
-    double? g,
-    double? b,
-    double? a,
+    double r,
+    double g,
+    double b,
+    double a,
   }) => ColorRGBA(
   r: r,
   g: g,

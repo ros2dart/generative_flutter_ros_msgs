@@ -8,9 +8,6 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/catkin_ws/devel/.private/stereo_msgs:$CMAKE_PREFIX_PATH"
-export LD_LIBRARY_PATH="/catkin_ws/devel/.private/stereo_msgs/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/catkin_ws/devel/.private/stereo_msgs/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/catkin_ws/build/stereo_msgs'
-export PYTHONPATH="/catkin_ws/devel/.private/stereo_msgs/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/catkin_ws/devel/.private/stereo_msgs/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
 export ROS_PACKAGE_PATH="/catkin_ws/src/common_msgs/stereo_msgs:$ROS_PACKAGE_PATH"

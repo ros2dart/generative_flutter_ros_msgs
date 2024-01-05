@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:57:15 2024
 
 // (in-package nav_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'package:geometry_msgs/msgs.dart';
 
@@ -25,10 +25,10 @@ class Odometry extends RosMessage<Odometry> {
 
   static Odometry $prototype = Odometry();
   Odometry({ 
-    Header? header,
-    String? child_frame_id,
-    PoseWithCovariance? pose,
-    TwistWithCovariance? twist,
+    Header header,
+    String child_frame_id,
+    PoseWithCovariance pose,
+    TwistWithCovariance twist,
   }):
   this.header = header ?? Header(),
   this.child_frame_id = child_frame_id ?? '',
@@ -37,10 +37,10 @@ class Odometry extends RosMessage<Odometry> {
 
   @override
   Odometry call({ 
-    Header? header,
-    String? child_frame_id,
-    PoseWithCovariance? pose,
-    TwistWithCovariance? twist,
+    Header header,
+    String child_frame_id,
+    PoseWithCovariance pose,
+    TwistWithCovariance twist,
   }) => Odometry(
   header: header,
   child_frame_id: child_frame_id,

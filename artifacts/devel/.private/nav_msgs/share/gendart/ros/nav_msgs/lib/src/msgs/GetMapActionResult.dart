@@ -1,16 +1,16 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:57:11 2024
 
 // (in-package nav_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
-import 'package:std_msgs/msgs.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:actionlib_msgs/msgs.dart';
+import 'package:std_msgs/msgs.dart';
 import 'GetMapResult.dart';
 
 //-----------------------------------------------------------
@@ -27,9 +27,9 @@ class GetMapActionResult extends RosActionResult<GetMapResult, GetMapActionResul
 
   static GetMapActionResult $prototype = GetMapActionResult();
   GetMapActionResult({ 
-    Header? header,
-    GoalStatus? status,
-    GetMapResult? result,
+    Header header,
+    GoalStatus status,
+    GetMapResult result,
   }):
   this.header = header ?? Header(),
   this.status = status ?? GoalStatus(),
@@ -37,9 +37,9 @@ class GetMapActionResult extends RosActionResult<GetMapResult, GetMapActionResul
 
   @override
   GetMapActionResult call({ 
-    Header? header,
-    GoalStatus? status,
-    GetMapResult? result,
+    Header header,
+    GoalStatus status,
+    GetMapResult result,
   }) => GetMapActionResult(
   header: header,
   status: status,

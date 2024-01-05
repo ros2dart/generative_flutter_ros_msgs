@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:36 2024
 
 // (in-package visualization_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -25,11 +25,11 @@ class MenuEntry extends RosMessage<MenuEntry> {
 
   static MenuEntry $prototype = MenuEntry();
   MenuEntry({ 
-    int? id,
-    int? parent_id,
-    String? title,
-    String? command,
-    int? command_type,
+    int id,
+    int parent_id,
+    String title,
+    String command,
+    int command_type,
   }):
   this.id = id ?? 0,
   this.parent_id = parent_id ?? 0,
@@ -39,11 +39,11 @@ class MenuEntry extends RosMessage<MenuEntry> {
 
   @override
   MenuEntry call({ 
-    int? id,
-    int? parent_id,
-    String? title,
-    String? command,
-    int? command_type,
+    int id,
+    int parent_id,
+    String title,
+    String command,
+    int command_type,
   }) => MenuEntry(
   id: id,
   parent_id: parent_id,

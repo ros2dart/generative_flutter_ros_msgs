@@ -1,16 +1,16 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:57:59 2024
 
 // (in-package sensor_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
-import 'package:geometry_msgs/msgs.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
+import 'package:geometry_msgs/msgs.dart';
 import 'ChannelFloat32.dart';
 
 //-----------------------------------------------------------
@@ -24,9 +24,9 @@ class PointCloud extends RosMessage<PointCloud> {
 
   static PointCloud $prototype = PointCloud();
   PointCloud({ 
-    Header? header,
-    List<Point32>? points,
-    List<ChannelFloat32>? channels,
+    Header header,
+    List<Point32> points,
+    List<ChannelFloat32> channels,
   }):
   this.header = header ?? Header(),
   this.points = points ?? [],
@@ -34,9 +34,9 @@ class PointCloud extends RosMessage<PointCloud> {
 
   @override
   PointCloud call({ 
-    Header? header,
-    List<Point32>? points,
-    List<ChannelFloat32>? channels,
+    Header header,
+    List<Point32> points,
+    List<ChannelFloat32> channels,
   }) => PointCloud(
   header: header,
   points: points,

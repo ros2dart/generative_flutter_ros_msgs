@@ -1,16 +1,16 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:57:16 2024
 
 // (in-package nav_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
-import 'package:std_msgs/msgs.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:geometry_msgs/msgs.dart';
+import 'package:std_msgs/msgs.dart';
 
 //-----------------------------------------------------------
 
@@ -21,16 +21,16 @@ class Path extends RosMessage<Path> {
 
   static Path $prototype = Path();
   Path({ 
-    Header? header,
-    List<PoseStamped>? poses,
+    Header header,
+    List<PoseStamped> poses,
   }):
   this.header = header ?? Header(),
   this.poses = poses ?? [];
 
   @override
   Path call({ 
-    Header? header,
-    List<PoseStamped>? poses,
+    Header header,
+    List<PoseStamped> poses,
   }) => Path(
   header: header,
   poses: poses,

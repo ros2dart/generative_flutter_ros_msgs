@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:57:13 2024
 
 // (in-package nav_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:geometry_msgs/msgs.dart';
 
 //-----------------------------------------------------------
@@ -26,11 +26,11 @@ class MapMetaData extends RosMessage<MapMetaData> {
 
   static MapMetaData $prototype = MapMetaData();
   MapMetaData({ 
-    RosTime? map_load_time,
-    double? resolution,
-    int? width,
-    int? height,
-    Pose? origin,
+    RosTime map_load_time,
+    double resolution,
+    int width,
+    int height,
+    Pose origin,
   }):
   this.map_load_time = map_load_time ?? RosTime(secs: 0, nsecs: 0),
   this.resolution = resolution ?? 0.0,
@@ -40,11 +40,11 @@ class MapMetaData extends RosMessage<MapMetaData> {
 
   @override
   MapMetaData call({ 
-    RosTime? map_load_time,
-    double? resolution,
-    int? width,
-    int? height,
-    Pose? origin,
+    RosTime map_load_time,
+    double resolution,
+    int width,
+    int height,
+    Pose origin,
   }) => MapMetaData(
   map_load_time: map_load_time,
   resolution: resolution,

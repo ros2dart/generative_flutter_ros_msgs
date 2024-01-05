@@ -7,8 +7,8 @@ services:
       target: dev
       args:
         - CATKIN_WORKSPACE_DIR=${CATKIN_WORKSPACE_DIR}
-        - USERNAME=developer
-        # - USERNAME=${USERNAME:-developer}
+        # - USERNAME=developer
+        - USERNAME=${USERNAME:-developer}
         - UID=${UID:-1000}
         - GID=${UID:-1000}
     container_name: generate_ros_msgs_ros2dart
@@ -17,12 +17,12 @@ services:
       - ROS_IP=${YOUR_IP}
     extra_hosts:
       - "${ROBOT_HOSTNAME}:${ROBOT_IP}"
-    image: ros_template:devel
+    image: generative_ros_msgs:devel
     network_mode: "host"
     tty: true
     volumes:
       - ../src:/${CATKIN_WORKSPACE_DIR}/src
       - ../artifacts/build:/${CATKIN_WORKSPACE_DIR}/build
       - ../artifacts/devel:/${CATKIN_WORKSPACE_DIR}/devel
-      - ../ros:/${CATKIN_WORKSPACE_DIR}/devel/share/gendart/ros/
+      # - ../ros:/${CATKIN_WORKSPACE_DIR}/devel/share/gendart/ros/:rw
 

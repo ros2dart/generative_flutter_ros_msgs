@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:57:25 2024
 
 // (in-package nav_msgs.srv)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -65,13 +65,13 @@ class GetMapResponse extends RosMessage<GetMapResponse> {
 
   static GetMapResponse $prototype = GetMapResponse();
   GetMapResponse({ 
-    OccupancyGrid? map,
+    OccupancyGrid map,
   }):
   this.map = map ?? OccupancyGrid();
 
   @override
   GetMapResponse call({ 
-    OccupancyGrid? map,
+    OccupancyGrid map,
   }) => GetMapResponse(
   map: map,
   );
@@ -197,6 +197,4 @@ class GetMap extends RosServiceMessage<GetMapRequest, GetMapResponse> {
   String get md5sum => '6cdd0a18e0aff5b0a3ca2326a89b54ff';
   @override
   String get fullType => 'nav_msgs/GetMap';
-  @override
-  String get messageDefinition => request.messageDefinition + "---" + response.messageDefinition;
 }

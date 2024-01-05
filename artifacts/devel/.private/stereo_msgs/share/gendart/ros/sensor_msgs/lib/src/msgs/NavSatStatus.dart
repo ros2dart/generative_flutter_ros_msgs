@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:46 2024
+// Updated: Fri Jan  5 12:59:23 2024
 
 // (in-package sensor_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -19,16 +19,16 @@ class NavSatStatus extends RosMessage<NavSatStatus> {
 
   static NavSatStatus $prototype = NavSatStatus();
   NavSatStatus({ 
-    int? status,
-    int? service,
+    int status,
+    int service,
   }):
   this.status = status ?? 0,
   this.service = service ?? 0;
 
   @override
   NavSatStatus call({ 
-    int? status,
-    int? service,
+    int status,
+    int service,
   }) => NavSatStatus(
   status: status,
   service: service,

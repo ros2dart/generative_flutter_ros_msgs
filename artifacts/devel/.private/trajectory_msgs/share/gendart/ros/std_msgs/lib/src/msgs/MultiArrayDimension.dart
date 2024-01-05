@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:41 2024
+// Updated: Fri Jan  5 12:56:33 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -21,9 +21,9 @@ class MultiArrayDimension extends RosMessage<MultiArrayDimension> {
 
   static MultiArrayDimension $prototype = MultiArrayDimension();
   MultiArrayDimension({ 
-    String? label,
-    int? size,
-    int? stride,
+    String label,
+    int size,
+    int stride,
   }):
   this.label = label ?? '',
   this.size = size ?? 0,
@@ -31,9 +31,9 @@ class MultiArrayDimension extends RosMessage<MultiArrayDimension> {
 
   @override
   MultiArrayDimension call({ 
-    String? label,
-    int? size,
-    int? stride,
+    String label,
+    int size,
+    int stride,
   }) => MultiArrayDimension(
   label: label,
   size: size,

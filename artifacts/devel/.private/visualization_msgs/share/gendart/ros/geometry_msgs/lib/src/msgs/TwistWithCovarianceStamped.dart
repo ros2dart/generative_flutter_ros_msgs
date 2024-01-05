@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:39 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'TwistWithCovariance.dart';
 
@@ -21,16 +21,16 @@ class TwistWithCovarianceStamped extends RosMessage<TwistWithCovarianceStamped> 
 
   static TwistWithCovarianceStamped $prototype = TwistWithCovarianceStamped();
   TwistWithCovarianceStamped({ 
-    Header? header,
-    TwistWithCovariance? twist,
+    Header header,
+    TwistWithCovariance twist,
   }):
   this.header = header ?? Header(),
   this.twist = twist ?? TwistWithCovariance();
 
   @override
   TwistWithCovarianceStamped call({ 
-    Header? header,
-    TwistWithCovariance? twist,
+    Header header,
+    TwistWithCovariance twist,
   }) => TwistWithCovarianceStamped(
   header: header,
   twist: twist,

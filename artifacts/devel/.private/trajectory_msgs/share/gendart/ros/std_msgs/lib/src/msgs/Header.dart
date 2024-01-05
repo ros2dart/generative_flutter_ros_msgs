@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:41 2024
+// Updated: Fri Jan  5 12:56:33 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -21,9 +21,9 @@ class Header extends RosMessage<Header> {
 
   static Header $prototype = Header();
   Header({ 
-    int? seq,
-    RosTime? stamp,
-    String? frame_id,
+    int seq,
+    RosTime stamp,
+    String frame_id,
   }):
   this.seq = seq ?? 0,
   this.stamp = stamp ?? RosTime(secs: 0, nsecs: 0),
@@ -31,9 +31,9 @@ class Header extends RosMessage<Header> {
 
   @override
   Header call({ 
-    int? seq,
-    RosTime? stamp,
-    String? frame_id,
+    int seq,
+    RosTime stamp,
+    String frame_id,
   }) => Header(
   seq: seq,
   stamp: stamp,

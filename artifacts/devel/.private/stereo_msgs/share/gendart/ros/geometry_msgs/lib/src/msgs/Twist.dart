@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:46 2024
+// Updated: Fri Jan  5 12:59:19 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'Vector3.dart';
 
 //-----------------------------------------------------------
@@ -20,16 +20,16 @@ class Twist extends RosMessage<Twist> {
 
   static Twist $prototype = Twist();
   Twist({ 
-    Vector3? linear,
-    Vector3? angular,
+    Vector3 linear,
+    Vector3 angular,
   }):
   this.linear = linear ?? Vector3(),
   this.angular = angular ?? Vector3();
 
   @override
   Twist call({ 
-    Vector3? linear,
-    Vector3? angular,
+    Vector3 linear,
+    Vector3 angular,
   }) => Twist(
   linear: linear,
   angular: angular,

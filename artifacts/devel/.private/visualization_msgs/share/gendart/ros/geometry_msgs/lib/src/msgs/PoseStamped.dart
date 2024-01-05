@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:38 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'Pose.dart';
 
@@ -21,16 +21,16 @@ class PoseStamped extends RosMessage<PoseStamped> {
 
   static PoseStamped $prototype = PoseStamped();
   PoseStamped({ 
-    Header? header,
-    Pose? pose,
+    Header header,
+    Pose pose,
   }):
   this.header = header ?? Header(),
   this.pose = pose ?? Pose();
 
   @override
   PoseStamped call({ 
-    Header? header,
-    Pose? pose,
+    Header header,
+    Pose pose,
   }) => PoseStamped(
   header: header,
   pose: pose,

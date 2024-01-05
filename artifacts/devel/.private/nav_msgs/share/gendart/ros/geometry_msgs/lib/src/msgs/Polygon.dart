@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:57:11 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'Point32.dart';
 
 //-----------------------------------------------------------
@@ -18,13 +18,13 @@ class Polygon extends RosMessage<Polygon> {
 
   static Polygon $prototype = Polygon();
   Polygon({ 
-    List<Point32>? points,
+    List<Point32> points,
   }):
   this.points = points ?? [];
 
   @override
   Polygon call({ 
-    List<Point32>? points,
+    List<Point32> points,
   }) => Polygon(
   points: points,
   );

@@ -9,7 +9,6 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/catkin_ws/devel/.private/sensor_msgs:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/catkin_ws/devel/.private/sensor_msgs/lib:$LD_LIBRARY_PATH"
-export PKG_CONFIG_PATH="/catkin_ws/devel/.private/sensor_msgs/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/catkin_ws/build/sensor_msgs'
 export PYTHONPATH="/catkin_ws/devel/.private/sensor_msgs/lib/python3/dist-packages:$PYTHONPATH"
 export ROSLISP_PACKAGE_DIRECTORIES="/catkin_ws/devel/.private/sensor_msgs/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"

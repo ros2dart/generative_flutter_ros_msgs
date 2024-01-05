@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:46 2024
+// Updated: Fri Jan  5 12:59:23 2024
 
 // (in-package sensor_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'PointField.dart';
 
@@ -35,15 +35,15 @@ class PointCloud2 extends RosMessage<PointCloud2> {
 
   static PointCloud2 $prototype = PointCloud2();
   PointCloud2({ 
-    Header? header,
-    int? height,
-    int? width,
-    List<PointField>? fields,
-    bool? is_bigendian,
-    int? point_step,
-    int? row_step,
-    List<int>? data,
-    bool? is_dense,
+    Header header,
+    int height,
+    int width,
+    List<PointField> fields,
+    bool is_bigendian,
+    int point_step,
+    int row_step,
+    List<int> data,
+    bool is_dense,
   }):
   this.header = header ?? Header(),
   this.height = height ?? 0,
@@ -57,15 +57,15 @@ class PointCloud2 extends RosMessage<PointCloud2> {
 
   @override
   PointCloud2 call({ 
-    Header? header,
-    int? height,
-    int? width,
-    List<PointField>? fields,
-    bool? is_bigendian,
-    int? point_step,
-    int? row_step,
-    List<int>? data,
-    bool? is_dense,
+    Header header,
+    int height,
+    int width,
+    List<PointField> fields,
+    bool is_bigendian,
+    int point_step,
+    int row_step,
+    List<int> data,
+    bool is_dense,
   }) => PointCloud2(
   header: header,
   height: height,

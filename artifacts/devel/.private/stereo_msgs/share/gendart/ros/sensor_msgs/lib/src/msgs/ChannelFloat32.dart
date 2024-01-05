@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:46 2024
+// Updated: Fri Jan  5 12:59:22 2024
 
 // (in-package sensor_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -19,16 +19,16 @@ class ChannelFloat32 extends RosMessage<ChannelFloat32> {
 
   static ChannelFloat32 $prototype = ChannelFloat32();
   ChannelFloat32({ 
-    String? name,
-    List<double>? values,
+    String name,
+    List<double> values,
   }):
   this.name = name ?? '',
   this.values = values ?? [];
 
   @override
   ChannelFloat32 call({ 
-    String? name,
-    List<double>? values,
+    String name,
+    List<double> values,
   }) => ChannelFloat32(
   name: name,
   values: values,

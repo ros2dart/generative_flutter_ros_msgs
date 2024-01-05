@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:41 2024
+// Updated: Fri Jan  5 12:56:33 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'MultiArrayLayout.dart';
 
 //-----------------------------------------------------------
@@ -20,16 +20,16 @@ class Int8MultiArray extends RosMessage<Int8MultiArray> {
 
   static Int8MultiArray $prototype = Int8MultiArray();
   Int8MultiArray({ 
-    MultiArrayLayout? layout,
-    List<int>? data,
+    MultiArrayLayout layout,
+    List<int> data,
   }):
   this.layout = layout ?? MultiArrayLayout(),
   this.data = data ?? [];
 
   @override
   Int8MultiArray call({ 
-    MultiArrayLayout? layout,
-    List<int>? data,
+    MultiArrayLayout layout,
+    List<int> data,
   }) => Int8MultiArray(
   layout: layout,
   data: data,

@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:57:58 2024
 
 // (in-package sensor_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 
 //-----------------------------------------------------------
@@ -30,13 +30,13 @@ class Image extends RosMessage<Image> {
 
   static Image $prototype = Image();
   Image({ 
-    Header? header,
-    int? height,
-    int? width,
-    String? encoding,
-    int? is_bigendian,
-    int? step,
-    List<int>? data,
+    Header header,
+    int height,
+    int width,
+    String encoding,
+    int is_bigendian,
+    int step,
+    List<int> data,
   }):
   this.header = header ?? Header(),
   this.height = height ?? 0,
@@ -48,13 +48,13 @@ class Image extends RosMessage<Image> {
 
   @override
   Image call({ 
-    Header? header,
-    int? height,
-    int? width,
-    String? encoding,
-    int? is_bigendian,
-    int? step,
-    List<int>? data,
+    Header header,
+    int height,
+    int width,
+    String encoding,
+    int is_bigendian,
+    int step,
+    List<int> data,
   }) => Image(
   header: header,
   height: height,

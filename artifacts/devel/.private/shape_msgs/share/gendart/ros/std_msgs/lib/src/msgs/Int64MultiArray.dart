@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:56:16 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'MultiArrayLayout.dart';
 
 //-----------------------------------------------------------
@@ -20,16 +20,16 @@ class Int64MultiArray extends RosMessage<Int64MultiArray> {
 
   static Int64MultiArray $prototype = Int64MultiArray();
   Int64MultiArray({ 
-    MultiArrayLayout? layout,
-    List<int>? data,
+    MultiArrayLayout layout,
+    List<int> data,
   }):
   this.layout = layout ?? MultiArrayLayout(),
   this.data = data ?? [];
 
   @override
   Int64MultiArray call({ 
-    MultiArrayLayout? layout,
-    List<int>? data,
+    MultiArrayLayout layout,
+    List<int> data,
   }) => Int64MultiArray(
   layout: layout,
   data: data,

@@ -63,8 +63,8 @@ CMakeFiles/diagnostic_msgs_generate_messages_nodejs: /catkin_ws/devel/.private/d
 /catkin_ws/devel/.private/diagnostic_msgs/share/gennodejs/ros/diagnostic_msgs/msg/DiagnosticArray.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /catkin_ws/devel/.private/diagnostic_msgs/share/gennodejs/ros/diagnostic_msgs/msg/DiagnosticArray.js: /catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg
 /catkin_ws/devel/.private/diagnostic_msgs/share/gennodejs/ros/diagnostic_msgs/msg/DiagnosticArray.js: /catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg
-/catkin_ws/devel/.private/diagnostic_msgs/share/gennodejs/ros/diagnostic_msgs/msg/DiagnosticArray.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /catkin_ws/devel/.private/diagnostic_msgs/share/gennodejs/ros/diagnostic_msgs/msg/DiagnosticArray.js: /catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg
+/catkin_ws/devel/.private/diagnostic_msgs/share/gennodejs/ros/diagnostic_msgs/msg/DiagnosticArray.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/catkin_ws/build/diagnostic_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from diagnostic_msgs/DiagnosticArray.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg -Idiagnostic_msgs:/catkin_ws/src/common_msgs/diagnostic_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p diagnostic_msgs -o /catkin_ws/devel/.private/diagnostic_msgs/share/gennodejs/ros/diagnostic_msgs/msg
 

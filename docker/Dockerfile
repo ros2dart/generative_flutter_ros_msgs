@@ -51,16 +51,19 @@ RUN apt-get update \
 
 ENV DEBIAN_FRONTEND=dialog
 
-RUN mkdir -p /catkin_ws/devel/share/gendart/ros
+# RUN mkdir -p /catkin_ws/devel/share/gendart/ros
 
 RUN addgroup --gid ${GID} ${USERNAME} \
    && adduser --disabled-password --gecos '' --uid ${GID} --gid ${GID} ${USERNAME} \
    && echo ${USERNAME} ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/${USERNAME} \
    && chown -R ${UID}:${GID} /home/${USERNAME} \
-   && chown -R ${UID}:${GID} ${CATKIN_WORKSPACE_DIR} \
-   && chown -R ${UID}:${GID} ${CATKIN_WORKSPACE_DIR}/devel/share/gendart/ros
+   && chown -R ${UID}:${GID} ${CATKIN_WORKSPACE_DIR}
 
-RUN chmod -R +rwX  /catkin_ws/devel/share/gendart/ros
+# && chown -R ${UID}:${GID} ${CATKIN_WORKSPACE_DIR}/devel/share/gendart/ros/
+
+# Permission files
+# RUN find /catkin_ws/devel/share/gendart/ros/ -type f -exec chmod +rw {} \; && \
+#     find /catkin_ws/devel/share/gendart/ros/ -type d -exec chmod +rwx {} \;
 
 COPY "/.vscode" "${CATKIN_WORKSPACE_DIR}/.vscode"
 RUN sed -i -E "s/(ROS_DISTRO=\\$\{1:-\").*(\"\})/\1${ROS_DISTRO}\2/" ${CATKIN_WORKSPACE_DIR}/.vscode/ros_source.bash \

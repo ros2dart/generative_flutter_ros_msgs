@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:42 2024
 
 // (in-package visualization_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'package:geometry_msgs/msgs.dart';
 import 'MenuEntry.dart';
@@ -33,13 +33,13 @@ class InteractiveMarker extends RosMessage<InteractiveMarker> {
 
   static InteractiveMarker $prototype = InteractiveMarker();
   InteractiveMarker({ 
-    Header? header,
-    Pose? pose,
-    String? name,
-    String? description,
-    double? scale,
-    List<MenuEntry>? menu_entries,
-    List<InteractiveMarkerControl>? controls,
+    Header header,
+    Pose pose,
+    String name,
+    String description,
+    double scale,
+    List<MenuEntry> menu_entries,
+    List<InteractiveMarkerControl> controls,
   }):
   this.header = header ?? Header(),
   this.pose = pose ?? Pose(),
@@ -51,13 +51,13 @@ class InteractiveMarker extends RosMessage<InteractiveMarker> {
 
   @override
   InteractiveMarker call({ 
-    Header? header,
-    Pose? pose,
-    String? name,
-    String? description,
-    double? scale,
-    List<MenuEntry>? menu_entries,
-    List<InteractiveMarkerControl>? controls,
+    Header header,
+    Pose pose,
+    String name,
+    String description,
+    double scale,
+    List<MenuEntry> menu_entries,
+    List<InteractiveMarkerControl> controls,
   }) => InteractiveMarker(
   header: header,
   pose: pose,

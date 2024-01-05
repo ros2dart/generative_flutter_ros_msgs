@@ -1,16 +1,16 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:57:07 2024
 
 // (in-package nav_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
-import 'package:geometry_msgs/msgs.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
+import 'package:geometry_msgs/msgs.dart';
 
 //-----------------------------------------------------------
 
@@ -25,10 +25,10 @@ class GridCells extends RosMessage<GridCells> {
 
   static GridCells $prototype = GridCells();
   GridCells({ 
-    Header? header,
-    double? cell_width,
-    double? cell_height,
-    List<Point>? cells,
+    Header header,
+    double cell_width,
+    double cell_height,
+    List<Point> cells,
   }):
   this.header = header ?? Header(),
   this.cell_width = cell_width ?? 0.0,
@@ -37,10 +37,10 @@ class GridCells extends RosMessage<GridCells> {
 
   @override
   GridCells call({ 
-    Header? header,
-    double? cell_width,
-    double? cell_height,
-    List<Point>? cells,
+    Header header,
+    double cell_width,
+    double cell_height,
+    List<Point> cells,
   }) => GridCells(
   header: header,
   cell_width: cell_width,

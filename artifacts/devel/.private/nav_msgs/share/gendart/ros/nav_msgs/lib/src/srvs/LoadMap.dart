@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:57:29 2024
 
 // (in-package nav_msgs.srv)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -21,13 +21,13 @@ class LoadMapRequest extends RosMessage<LoadMapRequest> {
 
   static LoadMapRequest $prototype = LoadMapRequest();
   LoadMapRequest({ 
-    String? map_url,
+    String map_url,
   }):
   this.map_url = map_url ?? '';
 
   @override
   LoadMapRequest call({ 
-    String? map_url,
+    String map_url,
   }) => LoadMapRequest(
   map_url: map_url,
   );
@@ -85,16 +85,16 @@ class LoadMapResponse extends RosMessage<LoadMapResponse> {
 
   static LoadMapResponse $prototype = LoadMapResponse();
   LoadMapResponse({ 
-    OccupancyGrid? map,
-    int? result,
+    OccupancyGrid map,
+    int result,
   }):
   this.map = map ?? OccupancyGrid(),
   this.result = result ?? 0;
 
   @override
   LoadMapResponse call({ 
-    OccupancyGrid? map,
-    int? result,
+    OccupancyGrid map,
+    int result,
   }) => LoadMapResponse(
   map: map,
   result: result,
@@ -241,6 +241,4 @@ class LoadMap extends RosServiceMessage<LoadMapRequest, LoadMapResponse> {
   String get md5sum => '22e647fdfbe3b23c8c9f419908afaebd';
   @override
   String get fullType => 'nav_msgs/LoadMap';
-  @override
-  String get messageDefinition => request.messageDefinition + "---" + response.messageDefinition;
 }

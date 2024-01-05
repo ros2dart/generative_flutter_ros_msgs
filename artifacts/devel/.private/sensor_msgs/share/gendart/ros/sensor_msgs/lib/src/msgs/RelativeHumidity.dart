@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:57:58 2024
 
 // (in-package sensor_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 
 //-----------------------------------------------------------
@@ -22,9 +22,9 @@ class RelativeHumidity extends RosMessage<RelativeHumidity> {
 
   static RelativeHumidity $prototype = RelativeHumidity();
   RelativeHumidity({ 
-    Header? header,
-    double? relative_humidity,
-    double? variance,
+    Header header,
+    double relative_humidity,
+    double variance,
   }):
   this.header = header ?? Header(),
   this.relative_humidity = relative_humidity ?? 0.0,
@@ -32,9 +32,9 @@ class RelativeHumidity extends RosMessage<RelativeHumidity> {
 
   @override
   RelativeHumidity call({ 
-    Header? header,
-    double? relative_humidity,
-    double? variance,
+    Header header,
+    double relative_humidity,
+    double variance,
   }) => RelativeHumidity(
   header: header,
   relative_humidity: relative_humidity,

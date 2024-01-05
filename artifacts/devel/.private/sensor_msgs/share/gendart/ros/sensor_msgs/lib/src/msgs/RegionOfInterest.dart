@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:57:59 2024
 
 // (in-package sensor_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -25,11 +25,11 @@ class RegionOfInterest extends RosMessage<RegionOfInterest> {
 
   static RegionOfInterest $prototype = RegionOfInterest();
   RegionOfInterest({ 
-    int? x_offset,
-    int? y_offset,
-    int? height,
-    int? width,
-    bool? do_rectify,
+    int x_offset,
+    int y_offset,
+    int height,
+    int width,
+    bool do_rectify,
   }):
   this.x_offset = x_offset ?? 0,
   this.y_offset = y_offset ?? 0,
@@ -39,11 +39,11 @@ class RegionOfInterest extends RosMessage<RegionOfInterest> {
 
   @override
   RegionOfInterest call({ 
-    int? x_offset,
-    int? y_offset,
-    int? height,
-    int? width,
-    bool? do_rectify,
+    int x_offset,
+    int y_offset,
+    int height,
+    int width,
+    bool do_rectify,
   }) => RegionOfInterest(
   x_offset: x_offset,
   y_offset: y_offset,

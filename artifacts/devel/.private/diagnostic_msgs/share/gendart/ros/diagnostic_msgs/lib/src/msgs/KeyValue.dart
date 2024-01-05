@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:39 2024
+// Updated: Fri Jan  5 12:53:43 2024
 
 // (in-package diagnostic_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -19,16 +19,16 @@ class KeyValue extends RosMessage<KeyValue> {
 
   static KeyValue $prototype = KeyValue();
   KeyValue({ 
-    String? key,
-    String? value,
+    String key,
+    String value,
   }):
   this.key = key ?? '',
   this.value = value ?? '';
 
   @override
   KeyValue call({ 
-    String? key,
-    String? value,
+    String key,
+    String value,
   }) => KeyValue(
   key: key,
   value: value,

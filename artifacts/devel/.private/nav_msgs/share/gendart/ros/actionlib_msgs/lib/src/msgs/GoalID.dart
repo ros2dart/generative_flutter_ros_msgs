@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:57:09 2024
 
 // (in-package actionlib_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -19,16 +19,16 @@ class GoalID extends RosMessage<GoalID> {
 
   static GoalID $prototype = GoalID();
   GoalID({ 
-    RosTime? stamp,
-    String? id,
+    RosTime stamp,
+    String id,
   }):
   this.stamp = stamp ?? RosTime(secs: 0, nsecs: 0),
   this.id = id ?? '';
 
   @override
   GoalID call({ 
-    RosTime? stamp,
-    String? id,
+    RosTime stamp,
+    String id,
   }) => GoalID(
   stamp: stamp,
   id: id,

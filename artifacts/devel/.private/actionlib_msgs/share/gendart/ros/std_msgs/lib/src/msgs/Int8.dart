@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:40 2024
+// Updated: Fri Jan  5 12:53:30 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -17,13 +17,13 @@ class Int8 extends RosMessage<Int8> {
 
   static Int8 $prototype = Int8();
   Int8({ 
-    int? data,
+    int data,
   }):
   this.data = data ?? 0;
 
   @override
   Int8 call({ 
-    int? data,
+    int data,
   }) => Int8(
   data: data,
   );

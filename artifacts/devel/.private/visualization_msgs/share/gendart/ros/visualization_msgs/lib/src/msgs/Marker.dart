@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:37 2024
 
 // (in-package visualization_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'package:geometry_msgs/msgs.dart';
 
@@ -47,21 +47,21 @@ class Marker extends RosMessage<Marker> {
 
   static Marker $prototype = Marker();
   Marker({ 
-    Header? header,
-    String? ns,
-    int? id,
-    int? type,
-    int? action,
-    Pose? pose,
-    Vector3? scale,
-    ColorRGBA? color,
-    RosTime? lifetime,
-    bool? frame_locked,
-    List<Point>? points,
-    List<ColorRGBA>? colors,
-    String? text,
-    String? mesh_resource,
-    bool? mesh_use_embedded_materials,
+    Header header,
+    String ns,
+    int id,
+    int type,
+    int action,
+    Pose pose,
+    Vector3 scale,
+    ColorRGBA color,
+    RosTime lifetime,
+    bool frame_locked,
+    List<Point> points,
+    List<ColorRGBA> colors,
+    String text,
+    String mesh_resource,
+    bool mesh_use_embedded_materials,
   }):
   this.header = header ?? Header(),
   this.ns = ns ?? '',
@@ -81,21 +81,21 @@ class Marker extends RosMessage<Marker> {
 
   @override
   Marker call({ 
-    Header? header,
-    String? ns,
-    int? id,
-    int? type,
-    int? action,
-    Pose? pose,
-    Vector3? scale,
-    ColorRGBA? color,
-    RosTime? lifetime,
-    bool? frame_locked,
-    List<Point>? points,
-    List<ColorRGBA>? colors,
-    String? text,
-    String? mesh_resource,
-    bool? mesh_use_embedded_materials,
+    Header header,
+    String ns,
+    int id,
+    int type,
+    int action,
+    Pose pose,
+    Vector3 scale,
+    ColorRGBA color,
+    RosTime lifetime,
+    bool frame_locked,
+    List<Point> points,
+    List<ColorRGBA> colors,
+    String text,
+    String mesh_resource,
+    bool mesh_use_embedded_materials,
   }) => Marker(
   header: header,
   ns: ns,

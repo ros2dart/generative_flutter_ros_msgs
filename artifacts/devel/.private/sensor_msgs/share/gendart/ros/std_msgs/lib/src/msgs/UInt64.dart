@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:57:54 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -17,13 +17,13 @@ class UInt64 extends RosMessage<UInt64> {
 
   static UInt64 $prototype = UInt64();
   UInt64({ 
-    int? data,
+    int data,
   }):
   this.data = data ?? 0;
 
   @override
   UInt64 call({ 
-    int? data,
+    int data,
   }) => UInt64(
   data: data,
   );

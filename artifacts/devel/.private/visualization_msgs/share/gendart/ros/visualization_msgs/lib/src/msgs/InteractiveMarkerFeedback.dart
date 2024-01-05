@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:42 2024
 
 // (in-package visualization_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'package:geometry_msgs/msgs.dart';
 
@@ -35,15 +35,15 @@ class InteractiveMarkerFeedback extends RosMessage<InteractiveMarkerFeedback> {
 
   static InteractiveMarkerFeedback $prototype = InteractiveMarkerFeedback();
   InteractiveMarkerFeedback({ 
-    Header? header,
-    String? client_id,
-    String? marker_name,
-    String? control_name,
-    int? event_type,
-    Pose? pose,
-    int? menu_entry_id,
-    Point? mouse_point,
-    bool? mouse_point_valid,
+    Header header,
+    String client_id,
+    String marker_name,
+    String control_name,
+    int event_type,
+    Pose pose,
+    int menu_entry_id,
+    Point mouse_point,
+    bool mouse_point_valid,
   }):
   this.header = header ?? Header(),
   this.client_id = client_id ?? '',
@@ -57,15 +57,15 @@ class InteractiveMarkerFeedback extends RosMessage<InteractiveMarkerFeedback> {
 
   @override
   InteractiveMarkerFeedback call({ 
-    Header? header,
-    String? client_id,
-    String? marker_name,
-    String? control_name,
-    int? event_type,
-    Pose? pose,
-    int? menu_entry_id,
-    Point? mouse_point,
-    bool? mouse_point_valid,
+    Header header,
+    String client_id,
+    String marker_name,
+    String control_name,
+    int event_type,
+    Pose pose,
+    int menu_entry_id,
+    Point mouse_point,
+    bool mouse_point_valid,
   }) => InteractiveMarkerFeedback(
   header: header,
   client_id: client_id,

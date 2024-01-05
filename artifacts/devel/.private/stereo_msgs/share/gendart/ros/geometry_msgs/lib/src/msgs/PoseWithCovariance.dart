@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:46 2024
+// Updated: Fri Jan  5 12:59:20 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'Pose.dart';
 
 //-----------------------------------------------------------
@@ -20,16 +20,16 @@ class PoseWithCovariance extends RosMessage<PoseWithCovariance> {
 
   static PoseWithCovariance $prototype = PoseWithCovariance();
   PoseWithCovariance({ 
-    Pose? pose,
-    List<double>? covariance,
+    Pose pose,
+    List<double> covariance,
   }):
   this.pose = pose ?? Pose(),
   this.covariance = covariance ?? List.generate(36, (_) => 0);
 
   @override
   PoseWithCovariance call({ 
-    Pose? pose,
-    List<double>? covariance,
+    Pose pose,
+    List<double> covariance,
   }) => PoseWithCovariance(
   pose: pose,
   covariance: covariance,

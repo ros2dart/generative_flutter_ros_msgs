@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:57:53 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -17,13 +17,13 @@ class Bool extends RosMessage<Bool> {
 
   static Bool $prototype = Bool();
   Bool({ 
-    bool? data,
+    bool data,
   }):
   this.data = data ?? false;
 
   @override
   Bool call({ 
-    bool? data,
+    bool data,
   }) => Bool(
   data: data,
   );

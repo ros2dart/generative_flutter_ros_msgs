@@ -63,8 +63,8 @@ CMakeFiles/diagnostic_msgs_generate_messages_cpp: /catkin_ws/devel/.private/diag
 /catkin_ws/devel/.private/diagnostic_msgs/include/diagnostic_msgs/DiagnosticArray.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
 /catkin_ws/devel/.private/diagnostic_msgs/include/diagnostic_msgs/DiagnosticArray.h: /catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg
 /catkin_ws/devel/.private/diagnostic_msgs/include/diagnostic_msgs/DiagnosticArray.h: /catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg
-/catkin_ws/devel/.private/diagnostic_msgs/include/diagnostic_msgs/DiagnosticArray.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /catkin_ws/devel/.private/diagnostic_msgs/include/diagnostic_msgs/DiagnosticArray.h: /catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg
+/catkin_ws/devel/.private/diagnostic_msgs/include/diagnostic_msgs/DiagnosticArray.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /catkin_ws/devel/.private/diagnostic_msgs/include/diagnostic_msgs/DiagnosticArray.h: /opt/ros/noetic/share/gencpp/msg.h.template
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/catkin_ws/build/diagnostic_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from diagnostic_msgs/DiagnosticArray.msg"
 	cd /catkin_ws/src/common_msgs/diagnostic_msgs && /catkin_ws/build/diagnostic_msgs/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg -Idiagnostic_msgs:/catkin_ws/src/common_msgs/diagnostic_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -p diagnostic_msgs -o /catkin_ws/devel/.private/diagnostic_msgs/include/diagnostic_msgs -e /opt/ros/noetic/share/gencpp/cmake/..

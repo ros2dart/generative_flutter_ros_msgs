@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:40 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'Pose.dart';
 
@@ -21,16 +21,16 @@ class PoseArray extends RosMessage<PoseArray> {
 
   static PoseArray $prototype = PoseArray();
   PoseArray({ 
-    Header? header,
-    List<Pose>? poses,
+    Header header,
+    List<Pose> poses,
   }):
   this.header = header ?? Header(),
   this.poses = poses ?? [];
 
   @override
   PoseArray call({ 
-    Header? header,
-    List<Pose>? poses,
+    Header header,
+    List<Pose> poses,
   }) => PoseArray(
   header: header,
   poses: poses,

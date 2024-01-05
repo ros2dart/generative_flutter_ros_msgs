@@ -1,14 +1,14 @@
 
 "use strict";
 
-let MultiDOFJointTrajectory = require('./MultiDOFJointTrajectory.js');
-let JointTrajectoryPoint = require('./JointTrajectoryPoint.js');
 let JointTrajectory = require('./JointTrajectory.js');
+let JointTrajectoryPoint = require('./JointTrajectoryPoint.js');
+let MultiDOFJointTrajectory = require('./MultiDOFJointTrajectory.js');
 let MultiDOFJointTrajectoryPoint = require('./MultiDOFJointTrajectoryPoint.js');
 
 module.exports = {
-  MultiDOFJointTrajectory: MultiDOFJointTrajectory,
-  JointTrajectoryPoint: JointTrajectoryPoint,
   JointTrajectory: JointTrajectory,
+  JointTrajectoryPoint: JointTrajectoryPoint,
+  MultiDOFJointTrajectory: MultiDOFJointTrajectory,
   MultiDOFJointTrajectoryPoint: MultiDOFJointTrajectoryPoint,
 };

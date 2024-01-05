@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:42 2024
+// Updated: Fri Jan  5 12:56:16 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -17,13 +17,13 @@ class UInt32 extends RosMessage<UInt32> {
 
   static UInt32 $prototype = UInt32();
   UInt32({ 
-    int? data,
+    int data,
   }):
   this.data = data ?? 0;
 
   @override
   UInt32 call({ 
-    int? data,
+    int data,
   }) => UInt32(
   data: data,
   );

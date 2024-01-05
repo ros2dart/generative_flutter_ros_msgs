@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:42 2024
 
 // (in-package visualization_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'InteractiveMarker.dart';
 
 //-----------------------------------------------------------
@@ -22,9 +22,9 @@ class InteractiveMarkerInit extends RosMessage<InteractiveMarkerInit> {
 
   static InteractiveMarkerInit $prototype = InteractiveMarkerInit();
   InteractiveMarkerInit({ 
-    String? server_id,
-    int? seq_num,
-    List<InteractiveMarker>? markers,
+    String server_id,
+    int seq_num,
+    List<InteractiveMarker> markers,
   }):
   this.server_id = server_id ?? '',
   this.seq_num = seq_num ?? 0,
@@ -32,9 +32,9 @@ class InteractiveMarkerInit extends RosMessage<InteractiveMarkerInit> {
 
   @override
   InteractiveMarkerInit call({ 
-    String? server_id,
-    int? seq_num,
-    List<InteractiveMarker>? markers,
+    String server_id,
+    int seq_num,
+    List<InteractiveMarker> markers,
   }) => InteractiveMarkerInit(
   server_id: server_id,
   seq_num: seq_num,

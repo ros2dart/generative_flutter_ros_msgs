@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:41 2024
+// Updated: Fri Jan  5 12:56:34 2024
 
 // (in-package trajectory_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:geometry_msgs/msgs.dart';
 
 //-----------------------------------------------------------
@@ -24,10 +24,10 @@ class MultiDOFJointTrajectoryPoint extends RosMessage<MultiDOFJointTrajectoryPoi
 
   static MultiDOFJointTrajectoryPoint $prototype = MultiDOFJointTrajectoryPoint();
   MultiDOFJointTrajectoryPoint({ 
-    List<Transform>? transforms,
-    List<Twist>? velocities,
-    List<Twist>? accelerations,
-    RosTime? time_from_start,
+    List<Transform> transforms,
+    List<Twist> velocities,
+    List<Twist> accelerations,
+    RosTime time_from_start,
   }):
   this.transforms = transforms ?? [],
   this.velocities = velocities ?? [],
@@ -36,10 +36,10 @@ class MultiDOFJointTrajectoryPoint extends RosMessage<MultiDOFJointTrajectoryPoi
 
   @override
   MultiDOFJointTrajectoryPoint call({ 
-    List<Transform>? transforms,
-    List<Twist>? velocities,
-    List<Twist>? accelerations,
-    RosTime? time_from_start,
+    List<Transform> transforms,
+    List<Twist> velocities,
+    List<Twist> accelerations,
+    RosTime time_from_start,
   }) => MultiDOFJointTrajectoryPoint(
   transforms: transforms,
   velocities: velocities,

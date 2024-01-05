@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:57:54 2024
 
 // (in-package std_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -17,13 +17,13 @@ class Time extends RosMessage<Time> {
 
   static Time $prototype = Time();
   Time({ 
-    RosTime? data,
+    RosTime data,
   }):
   this.data = data ?? RosTime(secs: 0, nsecs: 0);
 
   @override
   Time call({ 
-    RosTime? data,
+    RosTime data,
   }) => Time(
   data: data,
   );

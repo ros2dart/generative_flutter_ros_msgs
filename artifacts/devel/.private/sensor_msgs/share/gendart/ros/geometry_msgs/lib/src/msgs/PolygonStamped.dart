@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:57:56 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'Polygon.dart';
 
@@ -21,16 +21,16 @@ class PolygonStamped extends RosMessage<PolygonStamped> {
 
   static PolygonStamped $prototype = PolygonStamped();
   PolygonStamped({ 
-    Header? header,
-    Polygon? polygon,
+    Header header,
+    Polygon polygon,
   }):
   this.header = header ?? Header(),
   this.polygon = polygon ?? Polygon();
 
   @override
   PolygonStamped call({ 
-    Header? header,
-    Polygon? polygon,
+    Header header,
+    Polygon polygon,
   }) => PolygonStamped(
   header: header,
   polygon: polygon,

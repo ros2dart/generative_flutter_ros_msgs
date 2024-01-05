@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:39 2024
+// Updated: Fri Jan  5 12:53:48 2024
 
 // (in-package diagnostic_msgs.srv)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -68,9 +68,9 @@ class SelfTestResponse extends RosMessage<SelfTestResponse> {
 
   static SelfTestResponse $prototype = SelfTestResponse();
   SelfTestResponse({ 
-    String? id,
-    int? passed,
-    List<DiagnosticStatus>? status,
+    String id,
+    int passed,
+    List<DiagnosticStatus> status,
   }):
   this.id = id ?? '',
   this.passed = passed ?? 0,
@@ -78,9 +78,9 @@ class SelfTestResponse extends RosMessage<SelfTestResponse> {
 
   @override
   SelfTestResponse call({ 
-    String? id,
-    int? passed,
-    List<DiagnosticStatus>? status,
+    String id,
+    int passed,
+    List<DiagnosticStatus> status,
   }) => SelfTestResponse(
   id: id,
   passed: passed,
@@ -185,6 +185,4 @@ class SelfTest extends RosServiceMessage<SelfTestRequest, SelfTestResponse> {
   String get md5sum => 'ac21b1bab7ab17546986536c22eb34e9';
   @override
   String get fullType => 'diagnostic_msgs/SelfTest';
-  @override
-  String get messageDefinition => request.messageDefinition + "---" + response.messageDefinition;
 }

@@ -20,7 +20,7 @@ add_custom_target(diagnostic_msgs_generate_messages ALL)
 
 get_filename_component(_filename "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg" NAME_WE)
 add_custom_target(_diagnostic_msgs_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "diagnostic_msgs" "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg" "diagnostic_msgs/KeyValue:std_msgs/Header:diagnostic_msgs/DiagnosticStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "diagnostic_msgs" "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg" "diagnostic_msgs/KeyValue:diagnostic_msgs/DiagnosticStatus:std_msgs/Header"
 )
 
 get_filename_component(_filename "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg" NAME_WE)
@@ -52,7 +52,7 @@ add_custom_target(_diagnostic_msgs_generate_messages_check_deps_${_filename}
 _generate_msg_cpp(diagnostic_msgs
   "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg"
+  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/diagnostic_msgs
 )
 _generate_msg_cpp(diagnostic_msgs
@@ -117,7 +117,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS diagnostic_msgs_generate_messages_c
 _generate_msg_dart(diagnostic_msgs
   "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg"
+  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gendart_INSTALL_DIR}/diagnostic_msgs
 )
 _generate_msg_dart(diagnostic_msgs
@@ -182,7 +182,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS diagnostic_msgs_generate_messages_d
 _generate_msg_eus(diagnostic_msgs
   "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg"
+  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/diagnostic_msgs
 )
 _generate_msg_eus(diagnostic_msgs
@@ -247,7 +247,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS diagnostic_msgs_generate_messages_e
 _generate_msg_lisp(diagnostic_msgs
   "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg"
+  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/diagnostic_msgs
 )
 _generate_msg_lisp(diagnostic_msgs
@@ -312,7 +312,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS diagnostic_msgs_generate_messages_l
 _generate_msg_nodejs(diagnostic_msgs
   "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg"
+  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/diagnostic_msgs
 )
 _generate_msg_nodejs(diagnostic_msgs
@@ -377,7 +377,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS diagnostic_msgs_generate_messages_n
 _generate_msg_py(diagnostic_msgs
   "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticArray.msg"
   "${MSG_I_FLAGS}"
-  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg"
+  "/catkin_ws/src/common_msgs/diagnostic_msgs/msg/KeyValue.msg;/catkin_ws/src/common_msgs/diagnostic_msgs/msg/DiagnosticStatus.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/diagnostic_msgs
 )
 _generate_msg_py(diagnostic_msgs

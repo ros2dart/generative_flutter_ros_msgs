@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:57:10 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'Vector3.dart';
 
 //-----------------------------------------------------------
@@ -20,16 +20,16 @@ class Wrench extends RosMessage<Wrench> {
 
   static Wrench $prototype = Wrench();
   Wrench({ 
-    Vector3? force,
-    Vector3? torque,
+    Vector3 force,
+    Vector3 torque,
   }):
   this.force = force ?? Vector3(),
   this.torque = torque ?? Vector3();
 
   @override
   Wrench call({ 
-    Vector3? force,
-    Vector3? torque,
+    Vector3 force,
+    Vector3 torque,
   }) => Wrench(
   force: force,
   torque: torque,

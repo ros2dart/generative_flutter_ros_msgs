@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:44 2024
+// Updated: Fri Jan  5 12:57:55 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -21,9 +21,9 @@ class Point extends RosMessage<Point> {
 
   static Point $prototype = Point();
   Point({ 
-    double? x,
-    double? y,
-    double? z,
+    double x,
+    double y,
+    double z,
   }):
   this.x = x ?? 0.0,
   this.y = y ?? 0.0,
@@ -31,9 +31,9 @@ class Point extends RosMessage<Point> {
 
   @override
   Point call({ 
-    double? x,
-    double? y,
-    double? z,
+    double x,
+    double y,
+    double z,
   }) => Point(
   x: x,
   y: y,

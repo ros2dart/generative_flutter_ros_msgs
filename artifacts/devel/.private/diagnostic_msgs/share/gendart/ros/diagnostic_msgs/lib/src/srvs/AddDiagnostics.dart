@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:39 2024
+// Updated: Fri Jan  5 12:53:46 2024
 
 // (in-package diagnostic_msgs.srv)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -20,13 +20,13 @@ class AddDiagnosticsRequest extends RosMessage<AddDiagnosticsRequest> {
 
   static AddDiagnosticsRequest $prototype = AddDiagnosticsRequest();
   AddDiagnosticsRequest({ 
-    String? load_namespace,
+    String load_namespace,
   }):
   this.load_namespace = load_namespace ?? '';
 
   @override
   AddDiagnosticsRequest call({ 
-    String? load_namespace,
+    String load_namespace,
   }) => AddDiagnosticsRequest(
   load_namespace: load_namespace,
   );
@@ -97,16 +97,16 @@ class AddDiagnosticsResponse extends RosMessage<AddDiagnosticsResponse> {
 
   static AddDiagnosticsResponse $prototype = AddDiagnosticsResponse();
   AddDiagnosticsResponse({ 
-    bool? success,
-    String? message,
+    bool success,
+    String message,
   }):
   this.success = success ?? false,
   this.message = message ?? '';
 
   @override
   AddDiagnosticsResponse call({ 
-    bool? success,
-    String? message,
+    bool success,
+    String message,
   }) => AddDiagnosticsResponse(
   success: success,
   message: message,
@@ -178,6 +178,4 @@ class AddDiagnostics extends RosServiceMessage<AddDiagnosticsRequest, AddDiagnos
   String get md5sum => 'e6ac9bbde83d0d3186523c3687aecaee';
   @override
   String get fullType => 'diagnostic_msgs/AddDiagnostics';
-  @override
-  String get messageDefinition => request.messageDefinition + "---" + response.messageDefinition;
 }

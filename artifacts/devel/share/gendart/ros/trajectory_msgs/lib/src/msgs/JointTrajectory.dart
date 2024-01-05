@@ -1,1 +1,0 @@
-/catkin_ws/devel/.private/trajectory_msgs/share/gendart/ros/trajectory_msgs/lib/src/msgs/JointTrajectory.dart

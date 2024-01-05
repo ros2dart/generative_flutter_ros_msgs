@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:41 2024
+// Updated: Fri Jan  5 12:56:36 2024
 
 // (in-package trajectory_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -25,11 +25,11 @@ class JointTrajectoryPoint extends RosMessage<JointTrajectoryPoint> {
 
   static JointTrajectoryPoint $prototype = JointTrajectoryPoint();
   JointTrajectoryPoint({ 
-    List<double>? positions,
-    List<double>? velocities,
-    List<double>? accelerations,
-    List<double>? effort,
-    RosTime? time_from_start,
+    List<double> positions,
+    List<double> velocities,
+    List<double> accelerations,
+    List<double> effort,
+    RosTime time_from_start,
   }):
   this.positions = positions ?? [],
   this.velocities = velocities ?? [],
@@ -39,11 +39,11 @@ class JointTrajectoryPoint extends RosMessage<JointTrajectoryPoint> {
 
   @override
   JointTrajectoryPoint call({ 
-    List<double>? positions,
-    List<double>? velocities,
-    List<double>? accelerations,
-    List<double>? effort,
-    RosTime? time_from_start,
+    List<double> positions,
+    List<double> velocities,
+    List<double> accelerations,
+    List<double> effort,
+    RosTime time_from_start,
   }) => JointTrajectoryPoint(
   positions: positions,
   velocities: velocities,

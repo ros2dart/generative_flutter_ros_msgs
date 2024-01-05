@@ -3,12 +3,12 @@
 
 let GetMap = require('./GetMap.js')
 let GetPlan = require('./GetPlan.js')
-let SetMap = require('./SetMap.js')
 let LoadMap = require('./LoadMap.js')
+let SetMap = require('./SetMap.js')
 
 module.exports = {
   GetMap: GetMap,
   GetPlan: GetPlan,
-  SetMap: SetMap,
   LoadMap: LoadMap,
+  SetMap: SetMap,
 };

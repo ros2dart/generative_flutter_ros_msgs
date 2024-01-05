@@ -1,16 +1,16 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:57:09 2024
 
 // (in-package nav_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
-import 'package:std_msgs/msgs.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:actionlib_msgs/msgs.dart';
+import 'package:std_msgs/msgs.dart';
 import 'GetMapFeedback.dart';
 
 //-----------------------------------------------------------
@@ -27,9 +27,9 @@ class GetMapActionFeedback extends RosActionFeedback<GetMapFeedback, GetMapActio
 
   static GetMapActionFeedback $prototype = GetMapActionFeedback();
   GetMapActionFeedback({ 
-    Header? header,
-    GoalStatus? status,
-    GetMapFeedback? feedback,
+    Header header,
+    GoalStatus status,
+    GetMapFeedback feedback,
   }):
   this.header = header ?? Header(),
   this.status = status ?? GoalStatus(),
@@ -37,9 +37,9 @@ class GetMapActionFeedback extends RosActionFeedback<GetMapFeedback, GetMapActio
 
   @override
   GetMapActionFeedback call({ 
-    Header? header,
-    GoalStatus? status,
-    GetMapFeedback? feedback,
+    Header header,
+    GoalStatus status,
+    GetMapFeedback feedback,
   }) => GetMapActionFeedback(
   header: header,
   status: status,

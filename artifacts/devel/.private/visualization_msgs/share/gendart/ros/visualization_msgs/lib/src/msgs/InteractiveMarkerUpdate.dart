@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:42 2024
 
 // (in-package visualization_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'InteractiveMarker.dart';
 import 'InteractiveMarkerPose.dart';
 
@@ -29,12 +29,12 @@ class InteractiveMarkerUpdate extends RosMessage<InteractiveMarkerUpdate> {
 
   static InteractiveMarkerUpdate $prototype = InteractiveMarkerUpdate();
   InteractiveMarkerUpdate({ 
-    String? server_id,
-    int? seq_num,
-    int? type,
-    List<InteractiveMarker>? markers,
-    List<InteractiveMarkerPose>? poses,
-    List<String>? erases,
+    String server_id,
+    int seq_num,
+    int type,
+    List<InteractiveMarker> markers,
+    List<InteractiveMarkerPose> poses,
+    List<String> erases,
   }):
   this.server_id = server_id ?? '',
   this.seq_num = seq_num ?? 0,
@@ -45,12 +45,12 @@ class InteractiveMarkerUpdate extends RosMessage<InteractiveMarkerUpdate> {
 
   @override
   InteractiveMarkerUpdate call({ 
-    String? server_id,
-    int? seq_num,
-    int? type,
-    List<InteractiveMarker>? markers,
-    List<InteractiveMarkerPose>? poses,
-    List<String>? erases,
+    String server_id,
+    int seq_num,
+    int type,
+    List<InteractiveMarker> markers,
+    List<InteractiveMarkerPose> poses,
+    List<String> erases,
   }) => InteractiveMarkerUpdate(
   server_id: server_id,
   seq_num: seq_num,

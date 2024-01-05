@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:57:26 2024
 
 // (in-package nav_msgs.srv)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:geometry_msgs/msgs.dart';
 
 //-----------------------------------------------------------
@@ -26,9 +26,9 @@ class GetPlanRequest extends RosMessage<GetPlanRequest> {
 
   static GetPlanRequest $prototype = GetPlanRequest();
   GetPlanRequest({ 
-    PoseStamped? start,
-    PoseStamped? goal,
-    double? tolerance,
+    PoseStamped start,
+    PoseStamped goal,
+    double tolerance,
   }):
   this.start = start ?? PoseStamped(),
   this.goal = goal ?? PoseStamped(),
@@ -36,9 +36,9 @@ class GetPlanRequest extends RosMessage<GetPlanRequest> {
 
   @override
   GetPlanRequest call({ 
-    PoseStamped? start,
-    PoseStamped? goal,
-    double? tolerance,
+    PoseStamped start,
+    PoseStamped goal,
+    double tolerance,
   }) => GetPlanRequest(
   start: start,
   goal: goal,
@@ -156,13 +156,13 @@ class GetPlanResponse extends RosMessage<GetPlanResponse> {
 
   static GetPlanResponse $prototype = GetPlanResponse();
   GetPlanResponse({ 
-    Path? plan,
+    Path plan,
   }):
   this.plan = plan ?? Path();
 
   @override
   GetPlanResponse call({ 
-    Path? plan,
+    Path plan,
   }) => GetPlanResponse(
   plan: plan,
   );
@@ -271,6 +271,4 @@ class GetPlan extends RosServiceMessage<GetPlanRequest, GetPlanResponse> {
   String get md5sum => '421c8ea4d21c6c9db7054b4bbdf1e024';
   @override
   String get fullType => 'nav_msgs/GetPlan';
-  @override
-  String get messageDefinition => request.messageDefinition + "---" + response.messageDefinition;
 }

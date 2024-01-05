@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:43 2024
+// Updated: Fri Jan  5 12:59:34 2024
 
 // (in-package visualization_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'package:geometry_msgs/msgs.dart';
 
@@ -43,19 +43,19 @@ class ImageMarker extends RosMessage<ImageMarker> {
 
   static ImageMarker $prototype = ImageMarker();
   ImageMarker({ 
-    Header? header,
-    String? ns,
-    int? id,
-    int? type,
-    int? action,
-    Point? position,
-    double? scale,
-    ColorRGBA? outline_color,
-    int? filled,
-    ColorRGBA? fill_color,
-    RosTime? lifetime,
-    List<Point>? points,
-    List<ColorRGBA>? outline_colors,
+    Header header,
+    String ns,
+    int id,
+    int type,
+    int action,
+    Point position,
+    double scale,
+    ColorRGBA outline_color,
+    int filled,
+    ColorRGBA fill_color,
+    RosTime lifetime,
+    List<Point> points,
+    List<ColorRGBA> outline_colors,
   }):
   this.header = header ?? Header(),
   this.ns = ns ?? '',
@@ -73,19 +73,19 @@ class ImageMarker extends RosMessage<ImageMarker> {
 
   @override
   ImageMarker call({ 
-    Header? header,
-    String? ns,
-    int? id,
-    int? type,
-    int? action,
-    Point? position,
-    double? scale,
-    ColorRGBA? outline_color,
-    int? filled,
-    ColorRGBA? fill_color,
-    RosTime? lifetime,
-    List<Point>? points,
-    List<ColorRGBA>? outline_colors,
+    Header header,
+    String ns,
+    int id,
+    int type,
+    int action,
+    Point position,
+    double scale,
+    ColorRGBA outline_color,
+    int filled,
+    ColorRGBA fill_color,
+    RosTime lifetime,
+    List<Point> points,
+    List<ColorRGBA> outline_colors,
   }) => ImageMarker(
   header: header,
   ns: ns,

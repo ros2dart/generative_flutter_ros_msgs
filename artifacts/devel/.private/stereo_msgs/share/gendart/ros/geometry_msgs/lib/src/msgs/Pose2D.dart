@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:46 2024
+// Updated: Fri Jan  5 12:59:17 2024
 
 // (in-package geometry_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 
 //-----------------------------------------------------------
 
@@ -21,9 +21,9 @@ class Pose2D extends RosMessage<Pose2D> {
 
   static Pose2D $prototype = Pose2D();
   Pose2D({ 
-    double? x,
-    double? y,
-    double? theta,
+    double x,
+    double y,
+    double theta,
   }):
   this.x = x ?? 0.0,
   this.y = y ?? 0.0,
@@ -31,9 +31,9 @@ class Pose2D extends RosMessage<Pose2D> {
 
   @override
   Pose2D call({ 
-    double? x,
-    double? y,
-    double? theta,
+    double x,
+    double y,
+    double theta,
   }) => Pose2D(
   x: x,
   y: y,

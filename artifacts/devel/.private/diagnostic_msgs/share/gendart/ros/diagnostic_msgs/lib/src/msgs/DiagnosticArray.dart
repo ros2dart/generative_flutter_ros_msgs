@@ -1,14 +1,14 @@
 // Auto-generated. Do not edit!
 
-// Updated: Wed Jan  3 19:53:39 2024
+// Updated: Fri Jan  5 12:53:41 2024
 
 // (in-package diagnostic_msgs.msg)
 
 
-// ignore_for_file: type=lint
+// ignore_for_file: unused_import, overridden_fields
 import 'dart:convert';
 import 'package:buffer/buffer.dart';
-import 'package:dartros_msgutils/msg_utils.dart';
+import 'package:dartros/msg_utils.dart';
 import 'package:std_msgs/msgs.dart';
 import 'DiagnosticStatus.dart';
 
@@ -21,16 +21,16 @@ class DiagnosticArray extends RosMessage<DiagnosticArray> {
 
   static DiagnosticArray $prototype = DiagnosticArray();
   DiagnosticArray({ 
-    Header? header,
-    List<DiagnosticStatus>? status,
+    Header header,
+    List<DiagnosticStatus> status,
   }):
   this.header = header ?? Header(),
   this.status = status ?? [];
 
   @override
   DiagnosticArray call({ 
-    Header? header,
-    List<DiagnosticStatus>? status,
+    Header header,
+    List<DiagnosticStatus> status,
   }) => DiagnosticArray(
   header: header,
   status: status,
