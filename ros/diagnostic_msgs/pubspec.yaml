@@ -1,1 +1,16 @@
-/catkin_ws/devel/.private/diagnostic_msgs/share/gendart/ros/diagnostic_msgs/pubspec.yaml
+# Auto-generated. Do not edit!
+
+# Updated: Sun Jan  7 12:48:38 2024
+
+
+name: diagnostic_msgs
+description: A ros diagnostic_msgs message package for dartros
+version: 0.1.0
+
+environment:
+  sdk: ">=2.12.0 <4.0.0"
+
+dependencies:
+  buffer: ^1.1.0
+  dartros_msgutils: ">=0.1.0 <0.2.0"
+  std_msgs: ">=0.1.0 <0.2.0"

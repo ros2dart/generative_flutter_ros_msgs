@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /catkin_ws/build/sensor_msgs
 include CMakeFiles/_sensor_msgs_generate_messages_check_deps_MagneticField.dir/progress.make
 
 CMakeFiles/_sensor_msgs_generate_messages_check_deps_MagneticField:
-	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sensor_msgs /catkin_ws/src/common_msgs/sensor_msgs/msg/MagneticField.msg std_msgs/Header:geometry_msgs/Vector3
+	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py sensor_msgs /catkin_ws/src/common_msgs/sensor_msgs/msg/MagneticField.msg geometry_msgs/Vector3:std_msgs/Header
 
 _sensor_msgs_generate_messages_check_deps_MagneticField: CMakeFiles/_sensor_msgs_generate_messages_check_deps_MagneticField
 _sensor_msgs_generate_messages_check_deps_MagneticField: CMakeFiles/_sensor_msgs_generate_messages_check_deps_MagneticField.dir/build.make

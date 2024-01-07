@@ -60,8 +60,8 @@ CMakeFiles/stereo_msgs_generate_messages_eus: /catkin_ws/devel/.private/stereo_m
 /catkin_ws/devel/.private/stereo_msgs/share/roseus/ros/stereo_msgs/msg/DisparityImage.l: /opt/ros/noetic/lib/geneus/gen_eus.py
 /catkin_ws/devel/.private/stereo_msgs/share/roseus/ros/stereo_msgs/msg/DisparityImage.l: /catkin_ws/src/common_msgs/stereo_msgs/msg/DisparityImage.msg
 /catkin_ws/devel/.private/stereo_msgs/share/roseus/ros/stereo_msgs/msg/DisparityImage.l: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/catkin_ws/devel/.private/stereo_msgs/share/roseus/ros/stereo_msgs/msg/DisparityImage.l: /catkin_ws/src/common_msgs/sensor_msgs/msg/RegionOfInterest.msg
 /catkin_ws/devel/.private/stereo_msgs/share/roseus/ros/stereo_msgs/msg/DisparityImage.l: /catkin_ws/src/common_msgs/sensor_msgs/msg/Image.msg
+/catkin_ws/devel/.private/stereo_msgs/share/roseus/ros/stereo_msgs/msg/DisparityImage.l: /catkin_ws/src/common_msgs/sensor_msgs/msg/RegionOfInterest.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/catkin_ws/build/stereo_msgs/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from stereo_msgs/DisparityImage.msg"
 	catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /catkin_ws/src/common_msgs/stereo_msgs/msg/DisparityImage.msg -Istereo_msgs:/catkin_ws/src/common_msgs/stereo_msgs/msg -Isensor_msgs:/catkin_ws/src/common_msgs/sensor_msgs/msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Igeometry_msgs:/catkin_ws/src/common_msgs/geometry_msgs/msg -p stereo_msgs -o /catkin_ws/devel/.private/stereo_msgs/share/roseus/ros/stereo_msgs/msg
 

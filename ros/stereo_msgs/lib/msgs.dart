@@ -1,1 +1,6 @@
-/catkin_ws/devel/.private/stereo_msgs/share/gendart/ros/stereo_msgs/lib/msgs.dart
+// Auto-generated. Do not edit!
+
+// Updated: Sun Jan  7 12:52:45 2024
+
+
+export 'src/msgs/DisparityImage.dart';

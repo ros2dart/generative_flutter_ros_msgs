@@ -1,0 +1,44 @@
+{
+  "configVersion": 2,
+  "packages": [
+    {
+      "name": "actionlib_msgs",
+      "rootUri": "file:///Users/harunkurtme/.pub-cache/hosted/pub.dev/actionlib_msgs-0.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "buffer",
+      "rootUri": "file:///Users/harunkurtme/.pub-cache/hosted/pub.dev/buffer-1.2.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "dartros_msgutils",
+      "rootUri": "file:///Users/harunkurtme/.pub-cache/hosted/pub.dev/dartros_msgutils-0.1.0+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "geometry_msgs",
+      "rootUri": "file:///Users/harunkurtme/.pub-cache/hosted/pub.dev/geometry_msgs-0.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "std_msgs",
+      "rootUri": "file:///Users/harunkurtme/.pub-cache/hosted/pub.dev/std_msgs-0.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "sensor_msgs",
+      "rootUri": "../",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    }
+  ],
+  "generated": "2024-01-07T12:58:42.326763Z",
+  "generator": "pub",
+  "generatorVersion": "3.0.0"
+}
